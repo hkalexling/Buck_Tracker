@@ -1,4 +1,4 @@
 # iBudgeter
 An iOS expense tracker app written in Swift
 
-This app has been submitted to App Store and it's wating for review
+[App Store page](https://itunes.apple.com/us/app/ibudgeter/id1048395728?ls=1&mt=8)
