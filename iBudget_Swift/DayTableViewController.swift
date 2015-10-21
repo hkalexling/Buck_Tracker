@@ -125,7 +125,9 @@ class DayTableViewController: UITableViewController {
 			
 			let data = NSKeyedArchiver.archivedDataWithRootObject(self.records)
 			defaults.setObject(data, forKey: self.selectedDate!.toStringFromNonLocalDate())
-
+		}
+		if (self.tableView.visibleCells.count == 1){
+			self.tableView.reloadData()
 		}
 	}
 	

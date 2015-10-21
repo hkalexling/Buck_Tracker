@@ -25,6 +25,7 @@ class NewRecordTableViewController: UITableViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		
 		self.tableView.tableFooterView = UIView()
 		
 		let tapRec = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
@@ -178,7 +179,15 @@ class NewRecordTableViewController: UITableViewController {
 			else{
 				moneyText = "-\(self.moneyTextField.text!)"
 			}
-			self.saveRecord(self.descriptionTextField.text!, money: moneyText, method: self.selectedMethod!)
+			
+			var method : Method;
+			if self.selectedMethod != nil {
+				method = self.selectedMethod!;
+			}
+			else{
+				method = self.recordToEdit!.method
+			}
+			self.saveRecord(self.descriptionTextField.text!, money: moneyText, method: method)
 		}
 	}
 	
