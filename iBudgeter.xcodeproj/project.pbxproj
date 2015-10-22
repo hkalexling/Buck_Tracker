@@ -7,64 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710900931BC5900B00B62767 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710900921BC5900B00B62767 /* BudgetCell.swift */; settings = {ASSET_TAGS = (); }; };
-		7109FC7E1BC5AFB500493190 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7109FC7D1BC5AFB500493190 /* about.html */; settings = {ASSET_TAGS = (); }; };
-		7109FC911BC655E000493190 /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7109FCD41BC777CB00493190 /* NewPaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD31BC777CB00493190 /* NewPaymentMethodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7109FCD61BC77D0200493190 /* NPMNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD51BC77D0200493190 /* NPMNameCell.swift */; settings = {ASSET_TAGS = (); }; };
-		7109FCD81BC77D1100493190 /* NPMColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD71BC77D1100493190 /* NPMColorCell.swift */; settings = {ASSET_TAGS = (); }; };
-		7109FCDA1BC77D1F00493190 /* NPMSaveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD91BC77D1F00493190 /* NPMSaveCell.swift */; settings = {ASSET_TAGS = (); }; };
-		710D16A71BC2528A009F199F /* SRMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D16A61BC2528A009F199F /* SRMonthPicker.m */; settings = {ASSET_TAGS = (); }; };
-		710D16AA1BC2A138009F199F /* MonthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16A91BC2A138009F199F /* MonthPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		710D16AE1BC2DAAA009F199F /* GBFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AB1BC2DAAA009F199F /* GBFlatButton.swift */; settings = {ASSET_TAGS = (); }; };
-		710D16AF1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AC1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift */; settings = {ASSET_TAGS = (); }; };
-		710D16B01BC2DAAA009F199F /* GBFlatSelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */; settings = {ASSET_TAGS = (); }; };
-		712718371BC312A80053BC43 /* SaveButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712718361BC312A80053BC43 /* SaveButtonCell.swift */; settings = {ASSET_TAGS = (); }; };
-		713AB34D1BBF33D500413229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB34C1BBF33D500413229 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
-		713AB40F1BC07A6000413229 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3EF1BC07A6000413229 /* JTCalendarManager.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4101BC07A6000413229 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F11BC07A6000413229 /* JTCalendarSettings.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4111BC07A6000413229 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F31BC07A6000413229 /* JTDateHelper.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4121BC07A6000413229 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F61BC07A6000413229 /* JTCalendarDelegateManager.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4131BC07A6000413229 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F81BC07A6000413229 /* JTCalendarScrollManager.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4141BC07A6000413229 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4021BC07A6000413229 /* JTCalendarDayView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4151BC07A6000413229 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4041BC07A6000413229 /* JTCalendarMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4161BC07A6000413229 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4061BC07A6000413229 /* JTCalendarPageView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4171BC07A6000413229 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4081BC07A6000413229 /* JTCalendarWeekDayView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4181BC07A6000413229 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40A1BC07A6000413229 /* JTCalendarWeekView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4191BC07A6000413229 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40C1BC07A6000413229 /* JTHorizontalCalendarView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB41A1BC07A6000413229 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40E1BC07A6000413229 /* JTVerticalCalendarView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB41C1BC07AA100413229 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB41B1BC07AA100413229 /* CalendarViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		713AB46A1BC1989400413229 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4691BC1989400413229 /* BudgetViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		713AB47C1BC1A12F00413229 /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4721BC1A12F00413229 /* MCNewCustomLayer.m */; settings = {ASSET_TAGS = (); }; };
-		713AB47D1BC1A12F00413229 /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4751BC1A12F00413229 /* MCNewCustomLayeredView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB47E1BC1A12F00413229 /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4771BC1A12F00413229 /* MCPercentageDoughnutView.m */; settings = {ASSET_TAGS = (); }; };
-		713AB47F1BC1A12F00413229 /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4791BC1A12F00413229 /* MCSliceLayer.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4801BC1A12F00413229 /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB47B1BC1A12F00413229 /* MCUtil.m */; settings = {ASSET_TAGS = (); }; };
-		713AB4821BC1B9C600413229 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4811BC1B9C600413229 /* ParentViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		714782D51BBD33B500D7CB7D /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714782D41BBD33B500D7CB7D /* DayTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		714782D71BBD38D300D7CB7D /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714782D61BBD38D300D7CB7D /* RecordCell.swift */; settings = {ASSET_TAGS = (); }; };
-		715E366C1BBD46840008DD16 /* NewRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E366B1BBD46840008DD16 /* NewRecordCell.swift */; settings = {ASSET_TAGS = (); }; };
-		715E366E1BBD4F580008DD16 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E366D1BBD4F580008DD16 /* Record.swift */; settings = {ASSET_TAGS = (); }; };
-		715E36711BBD77E60008DD16 /* NewRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36701BBD77E60008DD16 /* NewRecordTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		715E36731BBD7D620008DD16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36721BBD7D620008DD16 /* DescriptionCell.swift */; settings = {ASSET_TAGS = (); }; };
-		71736C8B1BBEDB130098D576 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C8A1BBEDB130098D576 /* BarChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		71736C8D1BBEDDFB0098D576 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71736C8C1BBEDDFB0098D576 /* Charts.framework */; };
-		71736C931BBEF6D30098D576 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C921BBEF6D30098D576 /* SettingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		717F45FE1BBDB2E800BD9A9E /* MethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */; settings = {ASSET_TAGS = (); }; };
-		717F46001BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FF1BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		717F46061BBDC29E00BD9A9E /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F46051BBDC29E00BD9A9E /* PaymentMethodCell.swift */; settings = {ASSET_TAGS = (); }; };
-		717F46081BBDC3B700BD9A9E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F46071BBDC3B700BD9A9E /* Method.swift */; settings = {ASSET_TAGS = (); }; };
-		718ED87B1BC4371300FD7337 /* DefaultPaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718ED87A1BC4371300FD7337 /* DefaultPaymentMethodCell.swift */; settings = {ASSET_TAGS = (); }; };
-		7194B5D21BBD857C00C6655E /* MoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194B5D11BBD857C00C6655E /* MoneyCell.swift */; settings = {ASSET_TAGS = (); }; };
+		710900931BC5900B00B62767 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710900921BC5900B00B62767 /* BudgetCell.swift */; };
+		7109FC7E1BC5AFB500493190 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7109FC7D1BC5AFB500493190 /* about.html */; };
+		7109FC911BC655E000493190 /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */; };
+		7109FCD41BC777CB00493190 /* NewPaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD31BC777CB00493190 /* NewPaymentMethodTableViewController.swift */; };
+		7109FCD61BC77D0200493190 /* NPMNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD51BC77D0200493190 /* NPMNameCell.swift */; };
+		7109FCD81BC77D1100493190 /* NPMColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD71BC77D1100493190 /* NPMColorCell.swift */; };
+		7109FCDA1BC77D1F00493190 /* NPMSaveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD91BC77D1F00493190 /* NPMSaveCell.swift */; };
+		710D16A71BC2528A009F199F /* SRMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D16A61BC2528A009F199F /* SRMonthPicker.m */; };
+		710D16AA1BC2A138009F199F /* MonthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16A91BC2A138009F199F /* MonthPickerViewController.swift */; };
+		710D16AE1BC2DAAA009F199F /* GBFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AB1BC2DAAA009F199F /* GBFlatButton.swift */; };
+		710D16AF1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AC1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift */; };
+		710D16B01BC2DAAA009F199F /* GBFlatSelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */; };
+		7120A6951BD9763D008C7637 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7120A6921BD97622008C7637 /* Charts.framework */; };
+		7120A6961BD9763D008C7637 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7120A6921BD97622008C7637 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		712718371BC312A80053BC43 /* SaveButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712718361BC312A80053BC43 /* SaveButtonCell.swift */; };
+		713AB34D1BBF33D500413229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB34C1BBF33D500413229 /* Extensions.swift */; };
+		713AB40F1BC07A6000413229 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3EF1BC07A6000413229 /* JTCalendarManager.m */; };
+		713AB4101BC07A6000413229 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F11BC07A6000413229 /* JTCalendarSettings.m */; };
+		713AB4111BC07A6000413229 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F31BC07A6000413229 /* JTDateHelper.m */; };
+		713AB4121BC07A6000413229 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F61BC07A6000413229 /* JTCalendarDelegateManager.m */; };
+		713AB4131BC07A6000413229 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB3F81BC07A6000413229 /* JTCalendarScrollManager.m */; };
+		713AB4141BC07A6000413229 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4021BC07A6000413229 /* JTCalendarDayView.m */; };
+		713AB4151BC07A6000413229 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4041BC07A6000413229 /* JTCalendarMenuView.m */; };
+		713AB4161BC07A6000413229 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4061BC07A6000413229 /* JTCalendarPageView.m */; };
+		713AB4171BC07A6000413229 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4081BC07A6000413229 /* JTCalendarWeekDayView.m */; };
+		713AB4181BC07A6000413229 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40A1BC07A6000413229 /* JTCalendarWeekView.m */; };
+		713AB4191BC07A6000413229 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40C1BC07A6000413229 /* JTHorizontalCalendarView.m */; };
+		713AB41A1BC07A6000413229 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB40E1BC07A6000413229 /* JTVerticalCalendarView.m */; };
+		713AB41C1BC07AA100413229 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB41B1BC07AA100413229 /* CalendarViewController.swift */; };
+		713AB46A1BC1989400413229 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4691BC1989400413229 /* BudgetViewController.swift */; };
+		713AB47C1BC1A12F00413229 /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4721BC1A12F00413229 /* MCNewCustomLayer.m */; };
+		713AB47D1BC1A12F00413229 /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4751BC1A12F00413229 /* MCNewCustomLayeredView.m */; };
+		713AB47E1BC1A12F00413229 /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4771BC1A12F00413229 /* MCPercentageDoughnutView.m */; };
+		713AB47F1BC1A12F00413229 /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4791BC1A12F00413229 /* MCSliceLayer.m */; };
+		713AB4801BC1A12F00413229 /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 713AB47B1BC1A12F00413229 /* MCUtil.m */; };
+		713AB4821BC1B9C600413229 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB4811BC1B9C600413229 /* ParentViewController.swift */; };
+		714782D51BBD33B500D7CB7D /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714782D41BBD33B500D7CB7D /* DayTableViewController.swift */; };
+		714782D71BBD38D300D7CB7D /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714782D61BBD38D300D7CB7D /* RecordCell.swift */; };
+		715E366C1BBD46840008DD16 /* NewRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E366B1BBD46840008DD16 /* NewRecordCell.swift */; };
+		715E366E1BBD4F580008DD16 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E366D1BBD4F580008DD16 /* Record.swift */; };
+		715E36711BBD77E60008DD16 /* NewRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36701BBD77E60008DD16 /* NewRecordTableViewController.swift */; };
+		715E36731BBD7D620008DD16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36721BBD7D620008DD16 /* DescriptionCell.swift */; };
+		71736C8B1BBEDB130098D576 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C8A1BBEDB130098D576 /* BarChartViewController.swift */; };
+		71736C931BBEF6D30098D576 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C921BBEF6D30098D576 /* SettingTableViewController.swift */; };
+		717F45FE1BBDB2E800BD9A9E /* MethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */; };
+		717F46001BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FF1BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift */; };
+		717F46061BBDC29E00BD9A9E /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F46051BBDC29E00BD9A9E /* PaymentMethodCell.swift */; };
+		717F46081BBDC3B700BD9A9E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F46071BBDC3B700BD9A9E /* Method.swift */; };
+		718ED87B1BC4371300FD7337 /* DefaultPaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718ED87A1BC4371300FD7337 /* DefaultPaymentMethodCell.swift */; };
+		7194B5D21BBD857C00C6655E /* MoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194B5D11BBD857C00C6655E /* MoneyCell.swift */; };
 		71C58FE61BBC25BC00F94568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C58FE51BBC25BC00F94568 /* AppDelegate.swift */; };
 		71C58FED1BBC25BC00F94568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C58FEB1BBC25BC00F94568 /* Main.storyboard */; };
 		71C58FEF1BBC25BC00F94568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C58FEE1BBC25BC00F94568 /* Assets.xcassets */; };
 		71C58FFD1BBC25BC00F94568 /* iBudget_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C58FFC1BBC25BC00F94568 /* iBudget_SwiftTests.swift */; };
 		71C590081BBC25BC00F94568 /* iBudget_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C590071BBC25BC00F94568 /* iBudget_SwiftUITests.swift */; };
-		71C5908B1BBC453E00F94568 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5908A1BBC453E00F94568 /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71C5908B1BBC453E00F94568 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5908A1BBC453E00F94568 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7120A6911BD97622008C7637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7120A68C1BD97622008C7637 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		7120A6931BD97622008C7637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7120A68C1BD97622008C7637 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = ChartsTV;
+		};
+		7120A6971BD9763D008C7637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7120A68C1BD97622008C7637 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 		71C58FF91BBC25BC00F94568 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 71C58FDA1BBC25BC00F94568 /* Project object */;
@@ -88,6 +110,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7120A6961BD9763D008C7637 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +131,7 @@
 		710D16AB1BC2DAAA009F199F /* GBFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatButton.swift; sourceTree = "<group>"; };
 		710D16AC1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatButtonColorExtensions.swift; sourceTree = "<group>"; };
 		710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatSelectableButton.swift; sourceTree = "<group>"; };
+		7120A68C1BD97622008C7637 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		712718361BC312A80053BC43 /* SaveButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButtonCell.swift; sourceTree = "<group>"; };
 		713AB34C1BBF33D500413229 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		713AB3EC1BC07A6000413229 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
@@ -165,8 +189,6 @@
 		715E36701BBD77E60008DD16 /* NewRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordTableViewController.swift; sourceTree = "<group>"; };
 		715E36721BBD7D620008DD16 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		71736C8A1BBEDB130098D576 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
-		71736C8C1BBEDDFB0098D576 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
-		71736C8F1BBEE0780098D576 /* Charts.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Charts.framework.dSYM; path = Carthage/Build/iOS/Charts.framework.dSYM; sourceTree = "<group>"; };
 		71736C921BBEF6D30098D576 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodCell.swift; sourceTree = "<group>"; };
 		717F45FF1BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71736C8D1BBEDDFB0098D576 /* Charts.framework in Frameworks */,
+				7120A6951BD9763D008C7637 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +252,15 @@
 			);
 			name = SRMonthPicker;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		7120A68D1BD97622008C7637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7120A6921BD97622008C7637 /* Charts.framework */,
+				7120A6941BD97622008C7637 /* ChartsTV.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		713AB3EB1BC07A6000413229 /* JTCalendar */ = {
@@ -382,16 +413,6 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
-		71736C911BBEE0B10098D576 /* Charts */ = {
-			isa = PBXGroup;
-			children = (
-				71736C8F1BBEE0780098D576 /* Charts.framework.dSYM */,
-				71736C8C1BBEDDFB0098D576 /* Charts.framework */,
-			);
-			name = Charts;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		71B29B531BC2F356004E83FB /* GBFlatButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +431,7 @@
 				71C58FFB1BBC25BC00F94568 /* iBudget_SwiftTests */,
 				71C590061BBC25BC00F94568 /* iBudget_SwiftUITests */,
 				71C58FE31BBC25BC00F94568 /* Products */,
+				7120A68C1BD97622008C7637 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -432,7 +454,6 @@
 				714782D11BBC83EE00D7CB7D /* UI */,
 				713AB3EB1BC07A6000413229 /* JTCalendar */,
 				713AB46F1BC1A12F00413229 /* CircularProgress */,
-				71736C911BBEE0B10098D576 /* Charts */,
 				710D16A81BC253A4009F199F /* SRMonthPicker */,
 				71B29B531BC2F356004E83FB /* GBFlatButton */,
 				7109FCDB1BC7D87900493190 /* SwiftColorPicker */,
@@ -470,11 +491,11 @@
 				71C58FDF1BBC25BC00F94568 /* Frameworks */,
 				71C58FE01BBC25BC00F94568 /* Resources */,
 				71736C861BBED80B0098D576 /* Embed Frameworks */,
-				71736C891BBED95C0098D576 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7120A6981BD9763D008C7637 /* PBXTargetDependency */,
 			);
 			name = iBudgeter;
 			productName = iBudget_Swift;
@@ -552,6 +573,12 @@
 			mainGroup = 71C58FD91BBC25BC00F94568;
 			productRefGroup = 71C58FE31BBC25BC00F94568 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7120A68D1BD97622008C7637 /* Products */;
+					ProjectRef = 7120A68C1BD97622008C7637 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				71C58FE11BBC25BC00F94568 /* iBudgeter */,
@@ -560,6 +587,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7120A6921BD97622008C7637 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 7120A6911BD97622008C7637 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7120A6941BD97622008C7637 /* ChartsTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsTV.framework;
+			remoteRef = 7120A6931BD97622008C7637 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		71C58FE01BBC25BC00F94568 /* Resources */ = {
@@ -587,23 +631,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		71736C891BBED95C0098D576 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71C58FDE1BBC25BC00F94568 /* Sources */ = {
@@ -681,6 +708,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7120A6981BD9763D008C7637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 7120A6971BD9763D008C7637 /* PBXContainerItemProxy */;
+		};
 		71C58FFA1BBC25BC00F94568 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 71C58FE11BBC25BC00F94568 /* iBudgeter */;
@@ -802,10 +834,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iBudget_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -828,10 +857,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = iBudget_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
