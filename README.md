@@ -6,7 +6,7 @@ An iOS expense tracker app written in Swift
 
 [Support Page](http://hkalexling.com/2015/10/11/ibudgeter-support-page/)
 
-## ToDo (Pull requests are mostly welcome)
+## ToDo (Pull requests are most welcome)
 
 1. Switch to a better app name. (currently using **iBudgeter**)
 2. Add night mode 
