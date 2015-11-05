@@ -8,9 +8,9 @@ An iOS expense tracker app written in Swift
 
 ## ToDo (Pull requests are most welcome)
 
-1. Switch to a better app name. (currently using **iBudgeter**)
-2. Add night mode 
-3. iPad support
-4. Use Core data instead of `NSUserDefaults`
+- [ ] Switch to a better app name. (currently using **iBudgeter**)
+- [ ] iPad support
+- [ ] Use Core data instead of `NSUserDefaults`
+- [ ] Submit update to App Store
 
 
