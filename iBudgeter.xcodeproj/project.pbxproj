@@ -51,6 +51,7 @@
 		715E36731BBD7D620008DD16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36721BBD7D620008DD16 /* DescriptionCell.swift */; };
 		71736C8B1BBEDB130098D576 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C8A1BBEDB130098D576 /* BarChartViewController.swift */; };
 		71736C931BBEF6D30098D576 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C921BBEF6D30098D576 /* SettingTableViewController.swift */; };
+		71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */; };
 		717F45FE1BBDB2E800BD9A9E /* MethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */; };
 		717F46001BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F45FF1BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift */; };
 		717F46061BBDC29E00BD9A9E /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F46051BBDC29E00BD9A9E /* PaymentMethodCell.swift */; };
@@ -190,6 +191,7 @@
 		715E36721BBD7D620008DD16 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		71736C8A1BBEDB130098D576 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		71736C921BBEF6D30098D576 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodCell.swift; sourceTree = "<group>"; };
 		717F45FF1BBDB79D00BD9A9E /* PaymentMethodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewController.swift; sourceTree = "<group>"; };
 		717F46051BBDC29E00BD9A9E /* PaymentMethodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodCell.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				71C58FEB1BBC25BC00F94568 /* Main.storyboard */,
+				71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */,
 				71C58FEE1BBC25BC00F94568 /* Assets.xcassets */,
 			);
 			name = UI;
@@ -611,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7109FC7E1BC5AFB500493190 /* about.html in Resources */,
+				71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */,
 				71C58FEF1BBC25BC00F94568 /* Assets.xcassets in Resources */,
 				71C58FED1BBC25BC00F94568 /* Main.storyboard in Resources */,
 			);
@@ -828,7 +832,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -843,7 +846,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iBudget_Swift/iBudget_Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -851,7 +854,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -865,7 +867,7 @@
 				PRODUCT_NAME = iBudgeter;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iBudget_Swift/iBudget_Swift-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

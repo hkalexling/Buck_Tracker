@@ -16,6 +16,14 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	@IBOutlet weak var thisMonthButton: GBFlatButton!
 	@IBOutlet weak var jumpToButton: GBFlatButton!
 	
+	@IBOutlet weak var menuViewTopCons: NSLayoutConstraint!
+	@IBOutlet weak var menuViewHeightCons: NSLayoutConstraint!
+	@IBOutlet weak var weekdayViewHeightCons: NSLayoutConstraint!
+	@IBOutlet weak var weekDayViewLeftCons: NSLayoutConstraint!
+	@IBOutlet weak var weekDayViewRightCons: NSLayoutConstraint!
+	@IBOutlet weak var contentViewLeftCons: NSLayoutConstraint!
+	@IBOutlet weak var contentViewRightCons: NSLayoutConstraint!
+	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	let screenSize : CGSize = UIScreen.mainScreen().bounds.size
 	
@@ -26,6 +34,20 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		if UIDevice.currentDevice().model.containsString("iPad"){
+			
+			self.menuViewHeightCons.constant = CGSize.screenSize().height/12
+			
+			self.menuViewHeightCons.constant *= 2
+			self.weekdayViewHeightCons.constant *= 2
+			
+			self.weekDayViewLeftCons.constant = CGSize.screenSize().width/6
+			self.weekDayViewRightCons.constant = CGSize.screenSize().width/6
+			
+			self.contentViewLeftCons.constant = CGSize.screenSize().width/6
+			self.contentViewRightCons.constant = CGSize.screenSize().width/6
+		}
 		
 		self.thisMonthButton.tintColor = UIColor.themeColor()
 		self.jumpToButton.tintColor = UIColor.themeColor()

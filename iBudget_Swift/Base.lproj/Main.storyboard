@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -146,10 +146,17 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="contentView" destination="Scn-IX-ENy" id="8Ic-Id-yvG"/>
+                        <outlet property="contentViewLeftCons" destination="AHg-Nh-Bar" id="gTR-50-CDX"/>
+                        <outlet property="contentViewRightCons" destination="m5x-74-fRf" id="mfm-QO-jOM"/>
                         <outlet property="jumpToButton" destination="fpx-3i-LKR" id="sFU-lh-Yeg"/>
                         <outlet property="menuView" destination="WBT-yQ-wlP" id="eM5-KO-gET"/>
+                        <outlet property="menuViewHeightCons" destination="GBU-zU-udP" id="5on-6G-nJh"/>
+                        <outlet property="menuViewTopCons" destination="wNL-g3-J92" id="mKO-IR-kpF"/>
                         <outlet property="thisMonthButton" destination="faa-cm-6an" id="RvZ-Gt-TIq"/>
                         <outlet property="weekDayView" destination="dfN-1f-wDH" id="2eU-eh-lsq"/>
+                        <outlet property="weekDayViewLeftCons" destination="ic6-bT-QRM" id="tOn-DC-aR3"/>
+                        <outlet property="weekDayViewRightCons" destination="Ndx-rU-E6m" id="2Ut-8T-uoC"/>
+                        <outlet property="weekdayViewHeightCons" destination="wuy-eQ-rUd" id="6pJ-95-vz8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9q8-Mn-HwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
