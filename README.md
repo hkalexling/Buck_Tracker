@@ -1,4 +1,4 @@
-# iBudgeter
+# Buck Tracker
 
 An iOS expense tracker app written in Swift
 
@@ -8,8 +8,8 @@ An iOS expense tracker app written in Swift
 
 ## ToDo (Pull requests are most welcome)
 
-- [ ] Switch to a better app name. (currently using **iBudgeter**)
-- [ ] iPad support
+- [X] Switch to a better app name. (priviously **iBudgeter**)
+- [X] iPad support
 - [ ] Use Core data instead of `NSUserDefaults`
 - [ ] Submit update to App Store
 
