@@ -18,10 +18,10 @@ class PaymentMethodTableViewController: UITableViewController{
 	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	
+	var shouldShowTips = true
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-		self.tableView.tableFooterView = UIView()
     }
 	
 	override func viewWillAppear(animated: Bool) {
@@ -30,6 +30,34 @@ class PaymentMethodTableViewController: UITableViewController{
 			if let stored = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Method]? {
 				self.customMethods = stored
 			}
+		}
+		
+		if defaults.boolForKey("dismissPaymentMethodTips") || self.customMethods.count == 0 {
+			self.shouldShowTips = false
+		}
+		
+		if self.shouldShowTips{
+			let tipView = UIView(frame: CGRectMake(0, 0, CGSize.screenSize().width, 120))
+			
+			let label = UILabel(frame: CGRectMake(0, 30, CGSize.screenSize().width, 50))
+			label.text = "Swipe left on a custom payment method to delete it"
+			label.textAlignment = NSTextAlignment.Center
+			label.lineBreakMode = .ByWordWrapping
+			label.numberOfLines = 0
+			label.textColor = UIColor.grayColor()
+			tipView.addSubview(label)
+			
+			let button = UIButton(frame: CGRectMake(CGSize.screenSize().width/2 - 30, 80, 60, 30))
+			button.setTitle("Got it!", forState: .Normal)
+			button.titleLabel!.font = UIFont.systemFontOfSize(15)
+			button.setTitleColor(UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1), forState: .Normal)
+			button.addTarget(self, action: Selector("tipButtonTapped"), forControlEvents: .TouchDown)
+			tipView.addSubview(button)
+			
+			self.tableView.tableFooterView = tipView
+		}
+		else{
+			self.tableView.tableFooterView = UIView()
 		}
 		
 		self.tableView.reloadData()
@@ -149,5 +177,10 @@ class PaymentMethodTableViewController: UITableViewController{
 			let data = NSKeyedArchiver.archivedDataWithRootObject(self.customMethods)
 			self.defaults.setObject(data, forKey: "customMethods")
 		}
+	}
+	
+	func tipButtonTapped(){
+		defaults.setBool(true, forKey: "dismissPaymentMethodTips")
+		self.tableView.tableFooterView = UIView()
 	}
 }

@@ -174,6 +174,7 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		pickerVC.modalPresentationStyle = UIModalPresentationStyle.Popover
 		
 		var height : CGFloat = 0
+		var width = self.screenSize.width
 		if self.screenSize.height < 600 {
 			height = 230 //4s, 5, 5s
 		}
@@ -183,8 +184,11 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		else if self.screenSize.height < 1000{
 			height = 280 //6+, 6s+
 		}
-		
-		pickerVC.preferredContentSize = CGSizeMake(self.screenSize.width, height)
+		else{ //iPad
+			width *= 2/3
+			height = width * 4/6
+		}
+		pickerVC.preferredContentSize = CGSizeMake(width, height)
 		
 		let popoverMenuViewController = pickerVC.popoverPresentationController
 		popoverMenuViewController?.permittedArrowDirections = .Any

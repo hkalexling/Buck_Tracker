@@ -20,14 +20,14 @@ class BarChartViewController: UIViewController{
 	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		self.barChartView = BarChartView(frame : CGRectMake(0, 60, self.screenSize.width, self.screenSize.height - 49 - 44 - 20)) //tabBarHeight = 49, navigationBarHeight = 44
 		barChartView.legend.enabled = false
 		barChartView.pinchZoomEnabled = true
 		barChartView.doubleTapToZoomEnabled = false
-    }
+	}
 	
 	override func viewWillAppear(animated: Bool) {
 		self.reload()
@@ -52,7 +52,7 @@ class BarChartViewController: UIViewController{
 					}
 				}
 			}
-
+			
 			self.moneySpend.append(netMoney)
 		}
 		
@@ -67,14 +67,14 @@ class BarChartViewController: UIViewController{
 		
 		self.view.addSubview(self.barChartView)
 	}
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+	}
+	
 	func setChart(dataPoints: [String], values: [Double]) {
 		barChartView.descriptionText = ""
-		barChartView.noDataText = "You need to provide data for the chart."
+		barChartView.noDataText = ""
 		
 		barChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0, easingOption: .EaseInOutQuad)
 		
@@ -85,23 +85,23 @@ class BarChartViewController: UIViewController{
 			dataEntries.append(dataEntry)
 		}
 		
-		let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+		let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "")
 		
 		for i in 0..<self.moneySpend.count {
 			if i < chartDataSet.colors.count {
 				if self.moneySpend[i] < 0 {
-					chartDataSet.colors[i] = UIColor.redColor().soften(0.9)
+					chartDataSet.colors[i] = UIColor(red: 225/255, green: 14/255, blue: 70/255, alpha: 1)
 				}
 				else{
-					chartDataSet.colors[i] = UIColor.greenColor().soften(0.9)
+					chartDataSet.colors[i] = UIColor(red: 48/255, green: 188/255, blue: 123/255, alpha: 1)
 				}
 			}
 			else{
 				if self.moneySpend[i] < 0 {
-					chartDataSet.colors.append(UIColor.redColor().soften(0.9))
+					chartDataSet.colors.append(UIColor(red: 225/255, green: 14/255, blue: 70/255, alpha: 1))
 				}
 				else{
-					chartDataSet.colors.append(UIColor.greenColor().soften(0.9))
+					chartDataSet.colors.append(UIColor(red: 48/255, green: 188/255, blue: 123/255, alpha: 1))
 				}
 			}
 		}

@@ -17,12 +17,11 @@ class DayTableViewController: UITableViewController {
 	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	
+	var shouldShowTips : Bool = true
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-        self.tableView.tableFooterView = UIView()
-		
-		
+
 		let formatter : NSDateFormatter = NSDateFormatter()
 		formatter.dateFormat = "MMM dd, yyyy"
 		formatter.timeZone = NSTimeZone.localTimeZone()
@@ -42,6 +41,38 @@ class DayTableViewController: UITableViewController {
 			if let stored = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Record]? {
 				self.records = stored
 			}
+		}
+		
+		if defaults.boolForKey("dismissTips") || self.records.count == 0 {
+			self.shouldShowTips = false
+		}
+		
+		if self.shouldShowTips{
+			let tipView = UIView(frame: CGRectMake(0, 0, CGSize.screenSize().width, 120))
+			
+			let label = UILabel(frame: CGRectMake(0, 30, CGSize.screenSize().width, 30))
+			label.text = "Tap on a record to edit it"
+			label.textAlignment = NSTextAlignment.Center
+			label.textColor = UIColor.grayColor()
+			tipView.addSubview(label)
+			
+			let label1 = UILabel(frame: CGRectMake(0, 60, CGSize.screenSize().width, 30))
+			label1.text = "Swipe left on a record to delete it"
+			label1.textAlignment = NSTextAlignment.Center
+			label1.textColor = UIColor.grayColor()
+			tipView.addSubview(label1)
+			
+			let button = UIButton(frame: CGRectMake(CGSize.screenSize().width/2 - 30, 90, 60, 30))
+			button.setTitle("Got it!", forState: .Normal)
+			button.titleLabel!.font = UIFont.systemFontOfSize(15)
+			button.setTitleColor(UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1), forState: .Normal)
+			button.addTarget(self, action: Selector("tipButtonTapped"), forControlEvents: .TouchDown)
+			tipView.addSubview(button)
+			
+			self.tableView.tableFooterView = tipView
+		}
+		else{
+			self.tableView.tableFooterView = UIView()
 		}
 
 		self.tableView.reloadData()
@@ -151,5 +182,10 @@ class DayTableViewController: UITableViewController {
 			destVC.indexToEdit = self.selectedIndex
 			destVC.parentVC = self
 		}
+	}
+	
+	func tipButtonTapped(){
+		defaults.setBool(true, forKey: "dismissTips")
+		self.tableView.tableFooterView = UIView()
 	}
 }
