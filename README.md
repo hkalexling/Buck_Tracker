@@ -8,7 +8,7 @@ An iOS expense tracker app written in Swift
 
 ## ToDo (Pull requests are most welcome)
 
-- [X] Switch to a better app name. (priviously **iBudgeter**)
+- [X] Switch to a better app name. (originally **iBudgeter**)
 - [X] iPad support
 - [ ] Use Core data instead of `NSUserDefaults`
 - [ ] Submit update to App Store
