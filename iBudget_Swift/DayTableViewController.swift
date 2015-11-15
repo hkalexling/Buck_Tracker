@@ -25,9 +25,7 @@ class DayTableViewController: UITableViewController {
 		let formatter : NSDateFormatter = NSDateFormatter()
 		formatter.dateFormat = "MMM dd, yyyy"
 		formatter.timeZone = NSTimeZone.localTimeZone()
-		self.title = formatter.stringFromDate(self.selectedDate!)
-		
-		self.navigationController?.title = "New Record"
+		self.navigationItem.title = formatter.stringFromDate(self.selectedDate!)
 	}
 	
     override func didReceiveMemoryWarning() {

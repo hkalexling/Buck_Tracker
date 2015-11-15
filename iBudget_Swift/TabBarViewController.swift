@@ -37,6 +37,10 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 		self.chart()
 		self.settingTab()
 		
+		for item in self.tabBar.items!{
+			item.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
+		}
+		
 		let selectedColor = UIColor.whiteColor()
 		
 		self.tabBar.tintColor = selectedColor
@@ -71,7 +75,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 		let calendarVC : CalendarViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("calendarVC") as! CalendarViewController
 		
 		let navController = UINavigationController()
-		navController.title = "Calendar"
 		navController.navigationBar.barTintColor = UIColor.themeColor()
 		navController.navigationBar.tintColor = UIColor.whiteColor()
 		navController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
@@ -94,7 +97,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 	func budgetTab(){
 		let budgetVC : ParentViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("parentVC") as! ParentViewController
 		let nav : UINavigationController = UINavigationController(rootViewController: budgetVC)
-		nav.title = "Budget"
 		nav.navigationBar.barTintColor = UIColor.themeColor()
 		nav.navigationBar.tintColor = UIColor.whiteColor()
 		
@@ -119,7 +121,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 		navCon.viewControllers.append(dayVC)
 		navCon.viewControllers.append(newVC)
 		
-		navCon.title = "New Record"
 		navCon.navigationBar.barTintColor = UIColor.themeColor()
 		navCon.navigationBar.tintColor = UIColor.whiteColor()
 		navCon.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
@@ -138,7 +139,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 		
 		let chartVC : BarChartViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("chartVC") as! BarChartViewController
 		let chartNavVC  = UINavigationController(rootViewController: chartVC)
-		chartNavVC.title = "Stats"
 		chartNavVC.navigationBar.barTintColor = UIColor.themeColor()
 		chartNavVC.navigationBar.tintColor = UIColor.whiteColor()
 		
@@ -156,7 +156,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
 		
 		let settingVC : SettingTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("settingTableVC") as! SettingTableViewController
 		let settingNavVc = UINavigationController(rootViewController: settingVC)
-		settingNavVc.title = "Settings"
 		settingNavVc.navigationBar.barTintColor = UIColor.themeColor()
 		settingNavVc.navigationBar.tintColor = UIColor.whiteColor()
 		
