@@ -57,7 +57,7 @@ class SettingTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 4
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,6 +69,9 @@ class SettingTableViewController: UITableViewController {
 			return 2
 		}
 		if section == 2 {
+			return 1
+		}
+		if section == 3 {
 			return 2
 		}
 		return 0
@@ -109,6 +112,11 @@ class SettingTableViewController: UITableViewController {
 			return cell
 		}
 		if indexPath.section == 2 {
+			let cell = tableView.dequeueReusableCellWithIdentifier("exportCell") as! ExportCell
+			cell.label.text = "Export All Records"
+			return cell
+		}
+		if indexPath.section == 3 {
 			if indexPath.row == 0 {
 				let cell = tableView.dequeueReusableCellWithIdentifier("aboutCell", forIndexPath: indexPath)
 				return cell
@@ -128,6 +136,9 @@ class SettingTableViewController: UITableViewController {
 			}
 		}
 		if indexPath.section == 2 {
+			print ("233")
+		}
+		if indexPath.section == 3 {
 			if indexPath.row == 0 {
 				self.loadAboutVC()
 			}

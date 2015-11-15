@@ -962,6 +962,33 @@
                                 </tableViewCellContentView>
                                 <animations/>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="exportCell" id="FfU-WA-ATL" customClass="ExportCell" customModule="iBudgeter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="208" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FfU-WA-ATL" id="po0-XO-haq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkL-QL-yZm">
+                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="CkL-QL-yZm" firstAttribute="trailing" secondItem="po0-XO-haq" secondAttribute="trailingMargin" id="OWR-VD-IjZ"/>
+                                        <constraint firstItem="CkL-QL-yZm" firstAttribute="centerY" secondItem="po0-XO-haq" secondAttribute="centerY" id="aZp-jO-gdi"/>
+                                        <constraint firstItem="CkL-QL-yZm" firstAttribute="leading" secondItem="po0-XO-haq" secondAttribute="leadingMargin" id="bS1-dl-WSp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="label" destination="CkL-QL-yZm" id="acA-Ia-uwe"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="gYQ-7T-Y5y" id="C9R-eM-ak0"/>
@@ -1109,7 +1136,7 @@
         <image name="RedMinus" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iTy-2M-Kew"/>
+        <segue reference="lRg-zf-hRh"/>
         <segue reference="ygJ-7t-TWa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7107388A1BF92C1000EE874E /* ExportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710738891BF92C1000EE874E /* ExportCell.swift */; };
 		710900931BC5900B00B62767 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710900921BC5900B00B62767 /* BudgetCell.swift */; };
 		7109FC7E1BC5AFB500493190 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7109FC7D1BC5AFB500493190 /* about.html */; };
 		7109FC911BC655E000493190 /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */; };
@@ -119,6 +120,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		710738891BF92C1000EE874E /* ExportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportCell.swift; sourceTree = "<group>"; };
 		710900921BC5900B00B62767 /* BudgetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
 		7109FC7D1BC5AFB500493190 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				714782D61BBD38D300D7CB7D /* RecordCell.swift */,
+				710738891BF92C1000EE874E /* ExportCell.swift */,
 				715E366B1BBD46840008DD16 /* NewRecordCell.swift */,
 				715E36721BBD7D620008DD16 /* DescriptionCell.swift */,
 				717F45FD1BBDB2E800BD9A9E /* MethodCell.swift */,
@@ -686,6 +689,7 @@
 				7109FCD81BC77D1100493190 /* NPMColorCell.swift in Sources */,
 				71C58FE61BBC25BC00F94568 /* AppDelegate.swift in Sources */,
 				713AB4161BC07A6000413229 /* JTCalendarPageView.m in Sources */,
+				7107388A1BF92C1000EE874E /* ExportCell.swift in Sources */,
 				715E36711BBD77E60008DD16 /* NewRecordTableViewController.swift in Sources */,
 				713AB4131BC07A6000413229 /* JTCalendarScrollManager.m in Sources */,
 				713AB4111BC07A6000413229 /* JTDateHelper.m in Sources */,
