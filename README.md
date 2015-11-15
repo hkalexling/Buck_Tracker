@@ -13,6 +13,8 @@ v1.0.0 is on App Store and v1.1.0 is still waiting for review
 ###v1.2.0
 
 - [ ] Replace the default tab bar with [folding tab bar](https://github.com/Yalantis/FoldingTabBar.iOS)
+- [ ] Export and import data
+- [ ] Scrollable bar chart
 
 ###v1.1.0
 
