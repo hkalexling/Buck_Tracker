@@ -10,7 +10,7 @@ v1.0.0 is on App Store and v1.1.0 is still waiting for review
 
 ## ToDo
 
-Pull requests are most welcome. Your name and contribution can be added in the About page in the app :)
+Pull requests are most welcome. Your name and contribution can be added in the [About page](https://github.com/hkalexling/Buck_Tracker/blob/master/iBudget_Swift/about.html) in the app :)
 
 ###v1.2.0
 
