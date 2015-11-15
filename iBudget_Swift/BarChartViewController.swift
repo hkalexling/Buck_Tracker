@@ -29,8 +29,7 @@ class BarChartViewController: UIViewController{
 		
 		self.barChartView = BarChartView(frame : CGRectMake(0, 60, self.screenSize.width, self.screenSize.height - CGFloat.tabBarHeight() - CGFloat.navitaionBarHeight() - 20))
 		barChartView.legend.enabled = false
-		barChartView.pinchZoomEnabled = true
-		barChartView.doubleTapToZoomEnabled = false
+		barChartView.userInteractionEnabled = false
 		
 		let leftArrow = UIImage(named: "leftArrow")!
 		let rightArrow = UIImage(named: "rightArrow")
