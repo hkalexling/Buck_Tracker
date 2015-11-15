@@ -164,3 +164,15 @@ extension UIColor {
 		return UIColor(red: comp.red * coeff, green: comp.green * coeff, blue: comp.blue * coeff, alpha: comp.alpha)
 	}
 }
+
+public class Yuno{
+	public func backgroundThread(background: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+			if(background != nil){ background!(); }
+			
+			dispatch_async(dispatch_get_main_queue()){
+				if(completion != nil){ completion!(); }
+			}
+		}
+	}
+}

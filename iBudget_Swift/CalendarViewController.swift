@@ -82,7 +82,6 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		let realDayView = dayView as! JTCalendarDayView
 		
 		realDayView.textLabel.font = UIFont(name: realDayView.textLabel.font.fontName, size: 20)
-		
 		//today
 		if self.sameDay(realDayView.date, nonLocalDayB: NSDate()) {
 			realDayView.circleView.hidden = false
@@ -90,7 +89,6 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 			realDayView.textLabel.textColor = UIColor.whiteColor()
 			
 			realDayView.dotView.hidden = true
-			
 		}
 		else{
 			realDayView.circleView.hidden = true
@@ -104,7 +102,12 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 			else if realDayView.date.extractNonLocalDate().month == self.contentView.date.extractNonLocalDate().month {
 				realDayView.textLabel.textColor = UIColor.blackColor()
 				realDayView.dotView.hidden = false
-				realDayView.dotView.backgroundColor = self.decideDotColor(realDayView.date.toLocalTime())
+				var dotColor : UIColor = UIColor()
+				Yuno().backgroundThread({
+						dotColor = self.decideDotColor(realDayView.date.toLocalTime())
+					}, completion: {
+						realDayView.dotView.backgroundColor = dotColor
+				})
 			}
 		}
 	}
@@ -131,9 +134,9 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	}
 	
 	func sameDay(nonLocalDayA: NSDate , nonLocalDayB: NSDate) -> Bool{
-		let a = nonLocalDayA
-		let b = nonLocalDayB
-		return a.extractNonLocalDate().year == b.extractNonLocalDate().year && a.extractNonLocalDate().month == b.extractNonLocalDate().month && a.extractNonLocalDate().day == b.extractNonLocalDate().day
+		let a = nonLocalDayA.extractNonLocalDate()
+		let b = nonLocalDayB.extractNonLocalDate()
+		return a.year == b.year && a.month == b.month && a.day == b.day
 	}
 	
 	func decideDotColor(date : NSDate) -> UIColor{
