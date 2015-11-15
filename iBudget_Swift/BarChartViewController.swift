@@ -20,16 +20,40 @@ class BarChartViewController: UIViewController{
 	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	
+	var lastDate : NSDate = NSDate()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.barChartView = BarChartView(frame : CGRectMake(0, 60, self.screenSize.width, self.screenSize.height - 49 - 44 - 20)) //tabBarHeight = 49, navigationBarHeight = 44
+		self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+		
+		self.barChartView = BarChartView(frame : CGRectMake(0, 60, self.screenSize.width, self.screenSize.height - CGFloat.tabBarHeight() - CGFloat.navitaionBarHeight() - 20))
 		barChartView.legend.enabled = false
 		barChartView.pinchZoomEnabled = true
 		barChartView.doubleTapToZoomEnabled = false
+		
+		let leftArrow = UIImage(named: "leftArrow")!
+		let rightArrow = UIImage(named: "rightArrow")
+		
+		let nextButton = UIBarButtonItem(image: rightArrow, style: .Done, target: self, action: Selector("nextButtonTapped"))
+		let previousButton = UIBarButtonItem(image: leftArrow, style: .Done, target: self, action: Selector("previousButtonTapped"))
+		
+		self.navigationItem.leftBarButtonItem = previousButton
+		self.navigationItem.rightBarButtonItem = nextButton
 	}
 	
 	override func viewWillAppear(animated: Bool) {
+		self.lastDate = NSDate()
+		self.reload()
+	}
+	
+	func nextButtonTapped(){
+		self.lastDate = self.lastDate.dateByAddingTimeInterval(604800)
+		self.reload()
+	}
+	
+	func previousButtonTapped(){
+		self.lastDate = self.lastDate.dateByAddingTimeInterval(-604800)
 		self.reload()
 	}
 	
@@ -38,7 +62,8 @@ class BarChartViewController: UIViewController{
 		self.dayStrings = []
 		self.moneySpend = []
 		
-		let wholeWeekDate : [NSDate] = NSDate().getWholeWeek()
+		let wholeWeekDate : [NSDate] = self.lastDate.getWholeWeek()
+		self.title = "\(wholeWeekDate[0].toStringFromNonLocalDateWithoutYear()) ~ \(wholeWeekDate.last!.toStringFromNonLocalDateWithoutYear())"
 		for i in wholeWeekDate {
 			self.dayStrings.append(i.weekDay())
 			

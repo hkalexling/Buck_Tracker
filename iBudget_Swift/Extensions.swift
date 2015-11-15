@@ -72,12 +72,25 @@ extension CGFloat {
 	static func cornorRadius() -> CGFloat{
 		return 8
 	}
+	static func tabBarHeight() -> CGFloat{
+		return 49
+	}
+	static func navitaionBarHeight() -> CGFloat{
+		return 44
+	}
 }
 
 extension NSDate {
 	func toStringFromNonLocalDate() -> String{
 		let dateFormatter: NSDateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = "MM-dd-yyyy"
+		dateFormatter.timeZone = NSTimeZone.localTimeZone()
+		
+		return dateFormatter.stringFromDate(self)
+	}
+	func toStringFromNonLocalDateWithoutYear() -> String{
+		let dateFormatter: NSDateFormatter = NSDateFormatter()
+		dateFormatter.dateFormat = "MM-dd"
 		dateFormatter.timeZone = NSTimeZone.localTimeZone()
 		
 		return dateFormatter.stringFromDate(self)
