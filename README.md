@@ -10,9 +10,15 @@ v1.0.0 is on App Store and v1.1.0 is still waiting for review
 
 ## ToDo (Pull requests are most welcome)
 
+###v1.2.0
+
+- [ ] Replace the default tab bar with [folding tab bar](https://github.com/Yalantis/FoldingTabBar.iOS)
+
+###v1.1.0
+
 - [X] Switch to a better app name. (originally **iBudgeter**)
 - [X] iPad support
 - [ ] Use Core data instead of `NSUserDefaults`
-- [ ] Submit update to App Store
+- [X] Submit update to App Store
 
 
