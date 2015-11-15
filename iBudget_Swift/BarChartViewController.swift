@@ -31,7 +31,7 @@ class BarChartViewController: UIViewController{
 		barChartView.legend.enabled = false
 		barChartView.userInteractionEnabled = false
 		
-		let leftArrow = UIImage(named: "leftArrow")!
+		let leftArrow = UIImage(named: "leftArrow")
 		let rightArrow = UIImage(named: "rightArrow")
 		
 		let nextButton = UIBarButtonItem(image: rightArrow, style: .Done, target: self, action: Selector("nextButtonTapped"))
@@ -62,7 +62,7 @@ class BarChartViewController: UIViewController{
 		self.moneySpend = []
 		
 		let wholeWeekDate : [NSDate] = self.lastDate.getWholeWeek()
-		self.title = "\(wholeWeekDate[0].toStringFromNonLocalDateWithoutYear()) ~ \(wholeWeekDate.last!.toStringFromNonLocalDateWithoutYear())"
+		self.navigationItem.title = "\(wholeWeekDate[0].toStringFromNonLocalDateWithoutYear()) ~ \(wholeWeekDate.last!.toStringFromNonLocalDateWithoutYear())"
 		for i in wholeWeekDate {
 			self.dayStrings.append(i.weekDay())
 			
