@@ -17,7 +17,7 @@ Pull requests are most welcome. Your name and contribution can be added in the [
 - [ ] Make the calendar view smoother and more responsive
 - [ ] Replace the default tab bar with [folding tab bar](https://github.com/Yalantis/FoldingTabBar.iOS)
 - [ ] Export and import data
-- [ ] Scrollable bar chart
+- [X] Allow users to select different weeks to view in bar chart
 
 ###v1.1.0
 
