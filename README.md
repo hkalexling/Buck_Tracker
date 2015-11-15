@@ -8,7 +8,9 @@ v1.0.0 is on App Store and v1.1.0 is still waiting for review
 
 [Support Page](http://hkalexling.com/2015/10/11/ibudgeter-support-page/)
 
-## ToDo (Pull requests are most welcome)
+## ToDo
+
+Pull requests are most welcome. Your name and contribution can be added in the About page in the app :)
 
 ###v1.2.0
 
