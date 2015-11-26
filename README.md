@@ -1,5 +1,7 @@
 # Buck Tracker
 
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5657486f09d62f01003b8c15&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5657486f09d62f01003b8c15/build/latest)
+
 An iOS expense tracker app written in Swift
 
 Current version on App Store: v1.1.0
