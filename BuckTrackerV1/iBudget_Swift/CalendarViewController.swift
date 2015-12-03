@@ -85,7 +85,7 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		//today
 		if self.sameDay(realDayView.date, nonLocalDayB: NSDate()) {
 			realDayView.circleView.hidden = false
-			realDayView.circleView.backgroundColor = UIColor.themeColor()
+			realDayView.circleView.backgroundColor = self.contentView.date.extractNonLocalDate().month == NSDate().extractNonLocalDate().month ? UIColor.themeColor() : UIColor.whiteColor()
 			realDayView.textLabel.textColor = UIColor.whiteColor()
 			
 			realDayView.dotView.hidden = true
