@@ -82,7 +82,6 @@
                                     </view>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="uHG-sV-aam" secondAttribute="trailing" id="13g-CQ-43l"/>
                                     <constraint firstItem="RQR-0c-hPx" firstAttribute="height" secondItem="Axy-V0-fmW" secondAttribute="height" multiplier="0.5" id="8l1-qk-mwh"/>
@@ -109,6 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="0XP-Se-EnV" id="Mkp-Eh-yT0"/>
+                        <outlet property="holderView" destination="Axy-V0-fmW" id="1Fg-ZE-d3Y"/>
                         <outlet property="menuView" destination="uHG-sV-aam" id="mai-24-oLp"/>
                         <outlet property="weekdayView" destination="RQR-0c-hPx" id="VV1-8c-9bo"/>
                     </connections>
