@@ -24,7 +24,6 @@ class DayTableViewController: UITableViewController {
 
 		let formatter : NSDateFormatter = NSDateFormatter()
 		formatter.dateFormat = "MMM dd, yyyy"
-		formatter.timeZone = NSTimeZone.localTimeZone()
 		self.navigationItem.title = formatter.stringFromDate(self.selectedDate!)
 	}
 	
