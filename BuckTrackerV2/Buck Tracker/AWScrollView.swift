@@ -31,6 +31,10 @@ class AWScrollView: UIScrollView, UIScrollViewDelegate{
 	var transitionTime : NSTimeInterval = 0.5
 	
 	var mainView : UIView!
+	var leftView : UIView!
+	var rightView : UIView!
+	var topView : UIView!
+	var bottomView : UIView!
 	
 	enum ScrollDirection {
 		case Up
@@ -63,10 +67,26 @@ class AWScrollView: UIScrollView, UIScrollViewDelegate{
 		self.mainView = UIView(frame: CGRectMake(self.xExtension, self.yExtension, self.screenWidth, self.screenHeight))
 		self.mainView.backgroundColor = UIColor.clearColor()
 		
+		self.leftView = UIView(frame: CGRectMake(0, self.yExtension, self.screenWidth, self.screenHeight))
+		self.leftView.backgroundColor = UIColor.clearColor()
+		
+		self.rightView = UIView(frame: CGRectMake(self.xExtension + self.screenWidth, self.yExtension, self.screenWidth, self.screenHeight))
+		self.rightView.backgroundColor = UIColor.clearColor()
+		
+		self.topView = UIView(frame: CGRectMake(self.xExtension, 0, self.screenWidth, self.screenHeight))
+		self.topView.backgroundColor = UIColor.clearColor()
+		
+		self.bottomView = UIView(frame: CGRectMake(self.xExtension, self.yExtension + self.screenHeight, self.screenWidth, self.screenHeight))
+		self.bottomView.backgroundColor = UIColor.clearColor()
+		
 		let tapRec = UITapGestureRecognizer(target: self, action: Selector("mainViewTapped"))
 		self.mainView.addGestureRecognizer(tapRec)
 		
 		self.addSubview(self.mainView)
+		self.addSubview(self.leftView)
+		self.addSubview(self.rightView)
+		self.addSubview(self.topView)
+		self.addSubview(self.bottomView)
 		
 		let panRec = UIPanGestureRecognizer(target: self, action: Selector("paned:"))
 		self.addGestureRecognizer(panRec)

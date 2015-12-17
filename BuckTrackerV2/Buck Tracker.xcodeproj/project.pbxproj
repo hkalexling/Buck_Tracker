@@ -28,7 +28,50 @@
 		710E24111BF265000067AD4C /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710E24041BF264FF0067AD4C /* JTHorizontalCalendarView.m */; };
 		710E24121BF265000067AD4C /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710E24061BF264FF0067AD4C /* JTVerticalCalendarView.m */; };
 		710E24151BF266E70067AD4C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E24141BF266E70067AD4C /* CalendarViewController.swift */; };
+		713D12AE1C112DA9001EB1A1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713D12A61C112D4B001EB1A1 /* Charts.framework */; };
+		713D12AF1C112DA9001EB1A1 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 713D12A61C112D4B001EB1A1 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		713D12B41C112DF7001EB1A1 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D12B31C112DF7001EB1A1 /* BarChartViewController.swift */; };
+		713D12B61C113260001EB1A1 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D12B51C113260001EB1A1 /* Record.swift */; };
+		713D12B81C11327A001EB1A1 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D12B71C11327A001EB1A1 /* Method.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		713D12A51C112D4B001EB1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		713D12A71C112D4B001EB1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = ChartsTV;
+		};
+		713D12B01C112DA9001EB1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		713D12B21C112DA9001EB1A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				713D12AF1C112DA9001EB1A1 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		710E23A31BF2550B0067AD4C /* Buck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +118,10 @@
 		710E24061BF264FF0067AD4C /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
 		710E24131BF265470067AD4C /* Buck_Tracker-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Buck_Tracker-bridging-header.h"; sourceTree = "<group>"; };
 		710E24141BF266E70067AD4C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		713D12B31C112DF7001EB1A1 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		713D12B51C113260001EB1A1 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		713D12B71C11327A001EB1A1 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713D12AE1C112DA9001EB1A1 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +142,7 @@
 				710E23A51BF2550B0067AD4C /* Buck Tracker */,
 				710E23E31BF264FF0067AD4C /* JTCalendar */,
 				710E23A41BF2550B0067AD4C /* Products */,
+				713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				710E23A61BF2550B0067AD4C /* AppDelegate.swift */,
+				713D12B31C112DF7001EB1A1 /* BarChartViewController.swift */,
+				713D12B51C113260001EB1A1 /* Record.swift */,
+				713D12B71C11327A001EB1A1 /* Method.swift */,
 				710E24141BF266E70067AD4C /* CalendarViewController.swift */,
 				710E23B81BF2554C0067AD4C /* AWScrollView.swift */,
 				710E23BA1BF255C10067AD4C /* MainViewController.swift */,
@@ -186,6 +238,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		713D12A11C112D4B001EB1A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				713D12A61C112D4B001EB1A1 /* Charts.framework */,
+				713D12A81C112D4B001EB1A1 /* ChartsTV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,10 +257,12 @@
 				710E239F1BF2550B0067AD4C /* Sources */,
 				710E23A01BF2550B0067AD4C /* Frameworks */,
 				710E23A11BF2550B0067AD4C /* Resources */,
+				713D12B21C112DA9001EB1A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				713D12B11C112DA9001EB1A1 /* PBXTargetDependency */,
 			);
 			name = "Buck Tracker";
 			productName = "Buck Tracker";
@@ -232,12 +295,35 @@
 			mainGroup = 710E239A1BF2550B0067AD4C;
 			productRefGroup = 710E23A41BF2550B0067AD4C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 713D12A11C112D4B001EB1A1 /* Products */;
+					ProjectRef = 713D12A01C112D4B001EB1A1 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				710E23A21BF2550B0067AD4C /* Buck Tracker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		713D12A61C112D4B001EB1A1 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 713D12A51C112D4B001EB1A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		713D12A81C112D4B001EB1A1 /* ChartsTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsTV.framework;
+			remoteRef = 713D12A71C112D4B001EB1A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		710E23A11BF2550B0067AD4C /* Resources */ = {
@@ -259,13 +345,16 @@
 			files = (
 				710E23BD1BF2577B0067AD4C /* Yuno.swift in Sources */,
 				710E240C1BF264FF0067AD4C /* JTCalendarDayView.m in Sources */,
+				713D12B61C113260001EB1A1 /* Record.swift in Sources */,
 				710E24121BF265000067AD4C /* JTVerticalCalendarView.m in Sources */,
 				710E24111BF265000067AD4C /* JTHorizontalCalendarView.m in Sources */,
+				713D12B81C11327A001EB1A1 /* Method.swift in Sources */,
 				710E24081BF264FF0067AD4C /* JTCalendarSettings.m in Sources */,
 				710E23BB1BF255C10067AD4C /* MainViewController.swift in Sources */,
 				710E24151BF266E70067AD4C /* CalendarViewController.swift in Sources */,
 				710E23C01BF257BB0067AD4C /* Model.xcdatamodeld in Sources */,
 				710E24071BF264FF0067AD4C /* JTCalendarManager.m in Sources */,
+				713D12B41C112DF7001EB1A1 /* BarChartViewController.swift in Sources */,
 				710E24091BF264FF0067AD4C /* JTDateHelper.m in Sources */,
 				710E240F1BF264FF0067AD4C /* JTCalendarWeekDayView.m in Sources */,
 				710E240D1BF264FF0067AD4C /* JTCalendarMenuView.m in Sources */,
@@ -279,6 +368,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		713D12B11C112DA9001EB1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 713D12B01C112DA9001EB1A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		710E23AA1BF2550B0067AD4C /* Main.storyboard */ = {
@@ -387,9 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Buck Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.Buck-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.iBudget-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Buck Tracker/Buck_Tracker-bridging-header.h";
 			};
@@ -399,9 +497,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Buck Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.Buck-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.iBudget-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Buck Tracker/Buck_Tracker-bridging-header.h";
 			};
@@ -426,6 +525,7 @@
 				710E23B71BF2550B0067AD4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

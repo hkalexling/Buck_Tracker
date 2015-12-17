@@ -49,10 +49,25 @@ public extension CGSize {
 	}
 }
 
+public extension CGFloat {
+	static func tabBarHeight() -> CGFloat{
+		return 49
+	}
+	static func navitaionBarHeight() -> CGFloat{
+		return 44
+	}
+}
+
 public extension NSDate {
 	func toString() -> String{
 		let dateFormatter: NSDateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = "MM-dd-yyyy"
+		
+		return dateFormatter.stringFromDate(self)
+	}
+	func toStringWithoutYear() -> String{
+		let dateFormatter: NSDateFormatter = NSDateFormatter()
+		dateFormatter.dateFormat = "MM-dd"
 		
 		return dateFormatter.stringFromDate(self)
 	}
@@ -72,6 +87,18 @@ public extension NSDate {
 		let cal = NSCalendar.currentCalendar()
 		let comp = cal.components([.Calendar, .Day, .Era, .Hour, .Minute, .Month, .Nanosecond, .Year], fromDate: self)
 		return comp
+	}
+	func getWholeWeek() -> [NSDate] {
+		var aryToReturn : [NSDate] = []
+		let cal = NSCalendar.currentCalendar()
+		
+		let comp = NSDateComponents()
+		
+		for var i = -6; i < 1; i += 1 {
+			comp.weekday = i
+			aryToReturn.append(cal.dateByAddingComponents(comp, toDate: self, options: NSCalendarOptions.MatchStrictly)!)
+		}
+		return aryToReturn
 	}
 }
 
