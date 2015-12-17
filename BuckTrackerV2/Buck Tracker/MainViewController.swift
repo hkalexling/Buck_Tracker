@@ -20,13 +20,10 @@ class MainViewController: UIViewController {
 	var buttons : [UIButton] = []
 	var buttonNum : Int = 4
 	
-	let useShadow : Bool = false
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		self.setupAWScrollView()
-		self.setupBarChartView()
 		self.setupAWButton()
 		
     }
@@ -35,20 +32,9 @@ class MainViewController: UIViewController {
 		return true
 	}
 	
-	func setupBarChartView(){
-		let barChartView = UIView(frame: CGRectMake(0, 0, CGSize.screenSize().width, CGSize.screenSize().height))
-		self.awScrollView.leftView.addSubview(barChartView)
-		self.awScrollView.leftView.backgroundColor = UIColor.themeColor()
-		
-		let barChartVC = BarChartViewController()
-		self.addChildViewController(barChartVC)
-		barChartVC.view.frame = CGRectMake(0, 0, CGSize.screenSize().width, CGSize.screenSize().height)
-		barChartView.addSubview(barChartVC.view)
-	}
-	
 	func setupAWScrollView(){
-		self.awScrollView.xExtension = CGSize.screenSize().width
-		self.awScrollView.yExtension = CGSize.screenSize().height
+		self.awScrollView.xExtension = CGSize.screenSize().width * 0.75
+		self.awScrollView.yExtension = CGSize.screenSize().height * 0.75
 		
 		self.awScrollView.backgroundColor = UIColor.themeColor()
 		self.awScrollView.transitionTime = 0.8
@@ -76,37 +62,21 @@ class MainViewController: UIViewController {
 		self.mainButtonView = UIButton(frame: CGRectMake(30, self.screenHeight - 60, buttonSize, buttonSize))
 		self.mainButtonView.backgroundColor = UIColor.clearColor()
 		self.mainButtonView.layer.cornerRadius = buttonSize/2
+		self.mainButtonView.clipsToBounds = true
 		self.mainButtonView.addTarget(self, action: Selector("mainButtonTapped"), forControlEvents: .TouchDown)
 		self.mainButtonView.setImage(UIImage(named: "more"), forState: .Normal)
 		self.mainButtonView.adjustsImageWhenHighlighted = false
-		
-		if self.useShadow{
-			self.mainButtonView.layer.shadowColor = UIColor.blackColor().CGColor
-			self.mainButtonView.layer.shadowOffset = CGSizeMake(3, 3)
-			self.mainButtonView.layer.masksToBounds = false
-			self.mainButtonView.layer.shadowOpacity = 0.5
-		}
-		
 		self.view.addSubview(self.mainButtonView)
 		
 		for i in 0..<buttonNum {
 			let button = UIButton(frame: self.mainButtonView.frame)
 			button.backgroundColor = UIColor.clearColor()
 			button.layer.cornerRadius = buttonSize/2
+			button.clipsToBounds = true
 			button.setTitle("\(i)", forState: .Normal)
 			button.setImage(UIImage(named: "\(i)"), forState: .Normal)
 			button.addTarget(self, action: Selector("optionButtonTapped:"), forControlEvents: .TouchDown)
 			button.adjustsImageWhenHighlighted = false
-			
-			if self.useShadow {
-				button.layer.shadowColor = UIColor.blackColor().CGColor
-				button.layer.shadowOffset = CGSizeMake(3, 3)
-				button.layer.shadowOpacity = 0.5
-				button.layer.masksToBounds = false
-			}
-			
-			button.hidden = true
-			
 			self.buttons.append(button)
 			self.view.addSubview(button)
 		}
@@ -115,7 +85,6 @@ class MainViewController: UIViewController {
 	}
 	
 	func mainButtonTapped(){
-		self.awScrollView.scrollTo(self.awScrollView.centerPoint)
 		if self.buttons.first!.center == self.mainButtonView.center {
 			self.openButtons()
 		}
@@ -149,8 +118,6 @@ class MainViewController: UIViewController {
 			let point = CGPointMake(self.buttons[i].center.x + 100 * cos(theta), self.buttons[i].center.y + 100 * sin(theta))
 			let delay = NSTimeInterval(i) * 0.05
 			
-			button.hidden = false
-			
 			UIView.animateWithDuration(0.5, delay: 0.05 * NSTimeInterval(self.buttonNum - 1) - delay, usingSpringWithDamping: 0.5, initialSpringVelocity: 10, options: [], animations: {
 				button.center = point
 				}, completion:  nil)
@@ -167,9 +134,6 @@ class MainViewController: UIViewController {
 				button.center = self.mainButtonView.center
 				}, completion:  {(finished) in
 					button.transform = CGAffineTransformMakeRotation(0)
-					if button.center == self.mainButtonView.center {
-						button.hidden = true
-					}
 			})
 			let animation = CABasicAnimation(keyPath: "transform.rotation")
 			animation.duration = 0.5
