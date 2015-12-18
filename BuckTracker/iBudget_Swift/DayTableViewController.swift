@@ -23,7 +23,7 @@ class DayTableViewController: UITableViewController {
         super.viewDidLoad()
 
 		let formatter : NSDateFormatter = NSDateFormatter()
-		formatter.dateFormat = "MMM dd, yyyy"
+		formatter.dateFormat = "MMM dd, yyyy".localized
 		self.navigationItem.title = formatter.stringFromDate(self.selectedDate!)
 	}
 	

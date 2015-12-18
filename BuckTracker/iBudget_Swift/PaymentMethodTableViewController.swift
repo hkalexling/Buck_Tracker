@@ -96,14 +96,14 @@ class PaymentMethodTableViewController: UITableViewController{
 			let cell = tableView.dequeueReusableCellWithIdentifier("paymentMethodCell", forIndexPath: indexPath) as! PaymentMethodCell
 			
 			if indexPath.row < self.methods.count {
-				cell.descriptionLabel.text = self.methods[indexPath.row].name
+				cell.descriptionLabel.text = self.methods[indexPath.row].name.localized
 				cell.colorImageView.image = UIImage.imageWithColor(self.methods[indexPath.row].color)
 				cell.colorImageView.layer.cornerRadius = cell.colorImageView.frame.size.width * 0.5
 				cell.colorImageView.layer.masksToBounds = true
 			}
 			else{
 				let ind = indexPath.row - self.methods.count
-				cell.descriptionLabel.text = self.customMethods[ind].name
+				cell.descriptionLabel.text = self.customMethods[ind].name.localized
 				cell.colorImageView.image = UIImage.imageWithColor(self.customMethods[ind].color)
 				cell.colorImageView.layer.cornerRadius = cell.colorImageView.frame.size.width * 0.5
 				cell.colorImageView.layer.masksToBounds = true

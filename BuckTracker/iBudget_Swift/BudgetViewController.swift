@@ -55,7 +55,7 @@ class BudgetViewController: UIViewController{
 			let moneySpend = self.moneySpendOfDay(NSDate())
 			self.progress.percentage = CGFloat(moneySpend/self.dayBudget)
 			let formatter : NSDateFormatter = NSDateFormatter()
-			formatter.dateFormat = "MMM dd, yyyy"
+			formatter.dateFormat = "MMM dd, yyyy".localized
 			formatter.timeZone = NSTimeZone.localTimeZone()
 			
 			self.descriptionLabel.text = "\(moneySpend) / \(self.dayBudget)"

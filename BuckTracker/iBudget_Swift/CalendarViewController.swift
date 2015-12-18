@@ -24,6 +24,8 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	@IBOutlet weak var contentViewLeftCons: NSLayoutConstraint!
 	@IBOutlet weak var contentViewRightCons: NSLayoutConstraint!
 	
+	@IBOutlet weak var thisMonthButtonWidthCons: NSLayoutConstraint!
+	
 	let defaults = NSUserDefaults.standardUserDefaults()
 	let screenSize : CGSize = UIScreen.mainScreen().bounds.size
 	
@@ -34,6 +36,10 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		if "language".localized == "cn" {
+			NSLayoutConstraint.deactivateConstraints([self.thisMonthButtonWidthCons])
+		}
 		
 		if UIDevice.currentDevice().model.containsString("iPad"){
 			

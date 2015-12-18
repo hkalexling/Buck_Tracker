@@ -57,7 +57,7 @@ class SettingTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,9 +69,6 @@ class SettingTableViewController: UITableViewController {
 			return 2
 		}
 		if section == 2 {
-			return 1
-		}
-		if section == 3 {
 			return 2
 		}
 		return 0
@@ -82,7 +79,7 @@ class SettingTableViewController: UITableViewController {
 		if indexPath.section == 0 {
 			let cell = tableView.dequeueReusableCellWithIdentifier("defaultPaymentMethodCell", forIndexPath: indexPath) as! DefaultPaymentMethodCell
 			
-			cell.nameLabel.text = self.defaultMethod.name
+			cell.nameLabel.text = self.defaultMethod.name.localized
 			cell.colorImageView.image = UIImage.imageWithColor(self.defaultMethod.color)
 			cell.colorImageView.layer.cornerRadius = cell.colorImageView.frame.size.height * 0.5
 			cell.colorImageView.layer.masksToBounds = true
@@ -93,7 +90,7 @@ class SettingTableViewController: UITableViewController {
 			let cell = tableView.dequeueReusableCellWithIdentifier("budgetCell", forIndexPath: indexPath) as! BudgetCell
 			
 			if indexPath.row == 0 {
-				cell.budgetTypeLabel.text = "Daily Budget"
+				cell.budgetTypeLabel.text = "Daily Budget".localized
 				self.dailyBudgetTextField = cell.budgetTextField
 				
 				if let stored = self.defaults.doubleForKey("dailyBudget") as Double? {
@@ -101,7 +98,7 @@ class SettingTableViewController: UITableViewController {
 				}
 			}
 			else{
-				cell.budgetTypeLabel.text = "Monthly Budget"
+				cell.budgetTypeLabel.text = "Monthly Budget".localized
 				self.monthlyBudgetTextField = cell.budgetTextField
 				
 				if let stored = self.defaults.doubleForKey("monthlyBudget") as Double? {
@@ -112,11 +109,6 @@ class SettingTableViewController: UITableViewController {
 			return cell
 		}
 		if indexPath.section == 2 {
-			let cell = tableView.dequeueReusableCellWithIdentifier("exportCell") as! ExportCell
-			cell.label.text = "Export All Records"
-			return cell
-		}
-		if indexPath.section == 3 {
 			if indexPath.row == 0 {
 				let cell = tableView.dequeueReusableCellWithIdentifier("aboutCell", forIndexPath: indexPath)
 				return cell
@@ -136,9 +128,6 @@ class SettingTableViewController: UITableViewController {
 			}
 		}
 		if indexPath.section == 2 {
-			print ("233")
-		}
-		if indexPath.section == 3 {
 			if indexPath.row == 0 {
 				self.loadAboutVC()
 			}
@@ -177,7 +166,7 @@ class SettingTableViewController: UITableViewController {
 		webView.backgroundColor = UIColor.whiteColor()
 		aboutVC.view.addSubview(webView)
 		
-		let htmlFile = NSBundle.mainBundle().pathForResource("about", ofType: "html")!
+		let htmlFile = NSBundle.mainBundle().pathForResource("about".localized, ofType: "html")!
 		var htmlString : NSString!
 		do {
 			htmlString = try NSString(contentsOfFile: htmlFile, encoding: NSUTF8StringEncoding)

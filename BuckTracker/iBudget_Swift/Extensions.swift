@@ -15,6 +15,12 @@
 //  never gonna say goodbye. Never gonna tell a lie and hurt you.
 //
 
+extension String {
+	var localized : String {
+		return NSLocalizedString(self, comment: "")
+	}
+}
+
 extension UIImage {
 	class func imageWithColor(color: UIColor) -> UIImage {
 		let size = CGSizeMake(10, 10)

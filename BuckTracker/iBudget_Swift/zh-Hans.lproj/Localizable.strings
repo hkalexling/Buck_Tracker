@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  iBudgeter
+
+  Created by Alex Ling on 18/12/2015.
+  Copyright © 2015 Alex Ling. All rights reserved.
+*/
+
+"language" = "cn";
+
+"Daily Budget" = "每日预算";
+"Monthly Budget" = "每月预算";
+
+"Cash" = "现金";
+"EPS" = "EPS 易辦事";
+"VISA" = "VISA";
+"Master" = "Master 万事达";
+"PayPal" = "PayPal ";
+"American Express" = "American Express";
+"China UnionPay" = "中国银联";
+
+"about" = "about_cn";
+"MMM dd, yyyy" = "MMM dd日, yyyy";
