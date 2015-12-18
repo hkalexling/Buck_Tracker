@@ -166,7 +166,7 @@ class SettingTableViewController: UITableViewController {
 		webView.backgroundColor = UIColor.whiteColor()
 		aboutVC.view.addSubview(webView)
 		
-		let htmlFile = NSBundle.mainBundle().pathForResource("about".localized, ofType: "html")!
+		let htmlFile = NSBundle.mainBundle().pathForResource("about", ofType: "html")!
 		var htmlString : NSString!
 		do {
 			htmlString = try NSString(contentsOfFile: htmlFile, encoding: NSUTF8StringEncoding)

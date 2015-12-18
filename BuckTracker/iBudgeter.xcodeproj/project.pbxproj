@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7107388A1BF92C1000EE874E /* ExportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710738891BF92C1000EE874E /* ExportCell.swift */; };
 		710900931BC5900B00B62767 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710900921BC5900B00B62767 /* BudgetCell.swift */; };
-		7109FC7E1BC5AFB500493190 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7109FC7D1BC5AFB500493190 /* about.html */; };
 		7109FC911BC655E000493190 /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */; };
 		7109FCD41BC777CB00493190 /* NewPaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD31BC777CB00493190 /* NewPaymentMethodTableViewController.swift */; };
 		7109FCD61BC77D0200493190 /* NPMNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109FCD51BC77D0200493190 /* NPMNameCell.swift */; };
@@ -20,6 +19,7 @@
 		710D16AE1BC2DAAA009F199F /* GBFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AB1BC2DAAA009F199F /* GBFlatButton.swift */; };
 		710D16AF1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AC1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift */; };
 		710D16B01BC2DAAA009F199F /* GBFlatSelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */; };
+		711207B71C24025000FB99EF /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 711207B91C24025000FB99EF /* about.html */; };
 		7120A6951BD9763D008C7637 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7120A6921BD97622008C7637 /* Charts.framework */; };
 		7120A6961BD9763D008C7637 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7120A6921BD97622008C7637 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		712718371BC312A80053BC43 /* SaveButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712718361BC312A80053BC43 /* SaveButtonCell.swift */; };
@@ -51,8 +51,6 @@
 		715E36711BBD77E60008DD16 /* NewRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36701BBD77E60008DD16 /* NewRecordTableViewController.swift */; };
 		715E36731BBD7D620008DD16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36721BBD7D620008DD16 /* DescriptionCell.swift */; };
 		716103D41C23D59500339F01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 716103D61C23D59500339F01 /* Localizable.strings */; };
-		716103DB1C23ECBC00339F01 /* about_cn.html in Resources */ = {isa = PBXBuildFile; fileRef = 716103DA1C23ECBC00339F01 /* about_cn.html */; };
-		716103E21C23F81100339F01 /* about_cn_tw.html in Resources */ = {isa = PBXBuildFile; fileRef = 716103E11C23F81100339F01 /* about_cn_tw.html */; };
 		71736C8B1BBEDB130098D576 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C8A1BBEDB130098D576 /* BarChartViewController.swift */; };
 		71736C931BBEF6D30098D576 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C921BBEF6D30098D576 /* SettingTableViewController.swift */; };
 		71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */; };
@@ -125,7 +123,6 @@
 /* Begin PBXFileReference section */
 		710738891BF92C1000EE874E /* ExportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportCell.swift; sourceTree = "<group>"; };
 		710900921BC5900B00B62767 /* BudgetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
-		7109FC7D1BC5AFB500493190 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		7109FC901BC655E000493190 /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
 		7109FCD31BC777CB00493190 /* NewPaymentMethodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPaymentMethodTableViewController.swift; sourceTree = "<group>"; };
 		7109FCD51BC77D0200493190 /* NPMNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMNameCell.swift; sourceTree = "<group>"; };
@@ -139,6 +136,10 @@
 		710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatSelectableButton.swift; sourceTree = "<group>"; };
 		711207B51C24006500FB99EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		711207B61C24006B00FB99EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		711207B81C24025000FB99EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/about.html; sourceTree = "<group>"; };
+		711207BA1C24025700FB99EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "zh-Hans"; path = "zh-Hans.lproj/about.html"; sourceTree = "<group>"; };
+		711207BB1C24026100FB99EF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "zh-Hant"; path = "zh-Hant.lproj/about.html"; sourceTree = "<group>"; };
+		711207BC1C24026500FB99EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/about.html; sourceTree = "<group>"; };
 		7120A68C1BD97622008C7637 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		712718361BC312A80053BC43 /* SaveButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButtonCell.swift; sourceTree = "<group>"; };
 		713AB34C1BBF33D500413229 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -198,11 +199,9 @@
 		715E36721BBD7D620008DD16 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		716103D31C23D52D00339F01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		716103D91C23D61000339F01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		716103DA1C23ECBC00339F01 /* about_cn.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_cn.html; sourceTree = "<group>"; };
 		716103DD1C23F61400339F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		716103DF1C23F64700339F01 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		716103E01C23F64700339F01 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		716103E11C23F81100339F01 /* about_cn_tw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_cn_tw.html; sourceTree = "<group>"; };
 		71736C8A1BBEDB130098D576 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		71736C921BBEF6D30098D576 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -380,9 +379,7 @@
 				713AB41F1BC07FA200413229 /* Info.plist */,
 				713AB34C1BBF33D500413229 /* Extensions.swift */,
 				71C590171BBC290D00F94568 /* iBudget_Swift-Bridging-Header.h */,
-				7109FC7D1BC5AFB500493190 /* about.html */,
-				716103DA1C23ECBC00339F01 /* about_cn.html */,
-				716103E11C23F81100339F01 /* about_cn_tw.html */,
+				711207B91C24025000FB99EF /* about.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -634,12 +631,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				716103D41C23D59500339F01 /* Localizable.strings in Resources */,
-				7109FC7E1BC5AFB500493190 /* about.html in Resources */,
+				711207B71C24025000FB99EF /* about.html in Resources */,
 				71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */,
-				716103E21C23F81100339F01 /* about_cn_tw.html in Resources */,
 				71C58FEF1BBC25BC00F94568 /* Assets.xcassets in Resources */,
 				71C58FED1BBC25BC00F94568 /* Main.storyboard in Resources */,
-				716103DB1C23ECBC00339F01 /* about_cn.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +749,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		711207B91C24025000FB99EF /* about.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711207B81C24025000FB99EF /* Base */,
+				711207BA1C24025700FB99EF /* zh-Hans */,
+				711207BB1C24026100FB99EF /* zh-Hant */,
+				711207BC1C24026500FB99EF /* en */,
+			);
+			name = about.html;
+			sourceTree = "<group>";
+		};
 		716103D61C23D59500339F01 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
