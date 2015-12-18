@@ -52,6 +52,7 @@
 		715E36731BBD7D620008DD16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36721BBD7D620008DD16 /* DescriptionCell.swift */; };
 		716103D41C23D59500339F01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 716103D61C23D59500339F01 /* Localizable.strings */; };
 		716103DB1C23ECBC00339F01 /* about_cn.html in Resources */ = {isa = PBXBuildFile; fileRef = 716103DA1C23ECBC00339F01 /* about_cn.html */; };
+		716103E21C23F81100339F01 /* about_cn_tw.html in Resources */ = {isa = PBXBuildFile; fileRef = 716103E11C23F81100339F01 /* about_cn_tw.html */; };
 		71736C8B1BBEDB130098D576 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C8A1BBEDB130098D576 /* BarChartViewController.swift */; };
 		71736C931BBEF6D30098D576 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71736C921BBEF6D30098D576 /* SettingTableViewController.swift */; };
 		71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */; };
@@ -197,6 +198,10 @@
 		716103D51C23D59500339F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		716103D91C23D61000339F01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		716103DA1C23ECBC00339F01 /* about_cn.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_cn.html; sourceTree = "<group>"; };
+		716103DD1C23F61400339F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		716103DF1C23F64700339F01 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		716103E01C23F64700339F01 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		716103E11C23F81100339F01 /* about_cn_tw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_cn_tw.html; sourceTree = "<group>"; };
 		71736C8A1BBEDB130098D576 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		71736C921BBEF6D30098D576 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		71793B4B1BEBF06B006496C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -376,6 +381,7 @@
 				71C590171BBC290D00F94568 /* iBudget_Swift-Bridging-Header.h */,
 				7109FC7D1BC5AFB500493190 /* about.html */,
 				716103DA1C23ECBC00339F01 /* about_cn.html */,
+				716103E11C23F81100339F01 /* about_cn_tw.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -584,6 +590,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 71C58FD91BBC25BC00F94568;
 			productRefGroup = 71C58FE31BBC25BC00F94568 /* Products */;
@@ -628,6 +635,7 @@
 				716103D41C23D59500339F01 /* Localizable.strings in Resources */,
 				7109FC7E1BC5AFB500493190 /* about.html in Resources */,
 				71793B4C1BEBF06B006496C1 /* LaunchScreen.storyboard in Resources */,
+				716103E21C23F81100339F01 /* about_cn_tw.html in Resources */,
 				71C58FEF1BBC25BC00F94568 /* Assets.xcassets in Resources */,
 				71C58FED1BBC25BC00F94568 /* Main.storyboard in Resources */,
 				716103DB1C23ECBC00339F01 /* about_cn.html in Resources */,
@@ -750,6 +758,8 @@
 			children = (
 				716103D51C23D59500339F01 /* en */,
 				716103D91C23D61000339F01 /* zh-Hans */,
+				716103DD1C23F61400339F01 /* Base */,
+				716103E01C23F64700339F01 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -759,6 +769,7 @@
 			children = (
 				71C58FEC1BBC25BC00F94568 /* Base */,
 				716103D31C23D52D00339F01 /* zh-Hans */,
+				716103DF1C23F64700339F01 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -1,0 +1,75 @@
+
+/* Class = "UILabel"; text = "New Payment Method"; ObjectID = "2qL-JT-njt"; */
+"2qL-JT-njt.text" = "新支付方式";
+
+/* Class = "UILabel"; text = "Save"; ObjectID = "5Lq-Av-Tia"; */
+"5Lq-Av-Tia.text" = "保存";
+
+/* Class = "UILabel"; text = "Payment Method"; ObjectID = "7tQ-Re-Iw3"; */
+"7tQ-Re-Iw3.text" = "支付方式";
+
+/* Class = "UILabel"; text = "Visit Support Site"; ObjectID = "ADO-sa-7kI"; */
+"ADO-sa-7kI.text" = "訪問支援頁面";
+
+/* Class = "UILabel"; text = "New Record"; ObjectID = "B8m-PO-Vcm"; */
+"B8m-PO-Vcm.text" = "新消費記錄";
+
+/* Class = "UILabel"; text = "Save"; ObjectID = "Beu-wY-o7J"; */
+"Beu-wY-o7J.text" = "保存";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CkL-QL-yZm"; */
+"CkL-QL-yZm.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "5.5"; ObjectID = "GpA-Dl-BCS"; */
+"GpA-Dl-BCS.placeholder" = "5.5";
+
+/* Class = "UITextField"; placeholder = "Coffee @ Starbucks"; ObjectID = "Gx5-di-8to"; */
+"Gx5-di-8to.placeholder" = "咖啡 @ 星巴克";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "Hfl-4N-gJ9"; */
+"Hfl-4N-gJ9.normalTitle" = "確認";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IXn-rR-Fdt"; */
+"IXn-rR-Fdt.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "J6S-1m-FRZ"; */
+"J6S-1m-FRZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MOf-Yn-cfy"; */
+"MOf-Yn-cfy.text" = "Label";
+
+/* Class = "UILabel"; text = "Cash"; ObjectID = "PRY-l8-xj0"; */
+"PRY-l8-xj0.text" = "現金";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PWr-8Y-dsh"; */
+"PWr-8Y-dsh.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XMs-BP-K5k"; */
+"XMs-BP-K5k.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dpM-2a-qsv"; */
+"dpM-2a-qsv.text" = "Label";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "eOi-uA-qtK"; */
+"eOi-uA-qtK.text" = "關於";
+
+/* Class = "UIButton"; normalTitle = "This Month"; ObjectID = "faa-cm-6an"; */
+"faa-cm-6an.normalTitle" = "本月";
+
+/* Class = "UIButton"; normalTitle = "Jump To"; ObjectID = "fpx-3i-LKR"; */
+"fpx-3i-LKR.normalTitle" = "跳轉";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "g4s-sh-rlL"; */
+"g4s-sh-rlL.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Payment Method Name"; ObjectID = "jj9-Su-TNX"; */
+"jj9-Su-TNX.placeholder" = "支付方式";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "mfu-ns-oBz"; */
+"mfu-ns-oBz.text" = "顏色";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nrZ-01-h08"; */
+"nrZ-01-h08.text" = "Label";
+
+/* Class = "UILabel"; text = "Default Payment Method"; ObjectID = "xhR-eI-Tcd"; */
+"xhR-eI-Tcd.text" = "默認支付方式";
