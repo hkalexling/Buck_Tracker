@@ -137,6 +137,8 @@
 		710D16AB1BC2DAAA009F199F /* GBFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatButton.swift; sourceTree = "<group>"; };
 		710D16AC1BC2DAAA009F199F /* GBFlatButtonColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatButtonColorExtensions.swift; sourceTree = "<group>"; };
 		710D16AD1BC2DAAA009F199F /* GBFlatSelectableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBFlatSelectableButton.swift; sourceTree = "<group>"; };
+		711207B51C24006500FB99EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		711207B61C24006B00FB99EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		7120A68C1BD97622008C7637 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		712718361BC312A80053BC43 /* SaveButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButtonCell.swift; sourceTree = "<group>"; };
 		713AB34C1BBF33D500413229 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -195,7 +197,6 @@
 		715E36701BBD77E60008DD16 /* NewRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordTableViewController.swift; sourceTree = "<group>"; };
 		715E36721BBD7D620008DD16 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		716103D31C23D52D00339F01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		716103D51C23D59500339F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		716103D91C23D61000339F01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		716103DA1C23ECBC00339F01 /* about_cn.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_cn.html; sourceTree = "<group>"; };
 		716103DD1C23F61400339F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -587,10 +588,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				"zh-Hans",
 				"zh-Hant",
+				en,
 			);
 			mainGroup = 71C58FD91BBC25BC00F94568;
 			productRefGroup = 71C58FE31BBC25BC00F94568 /* Products */;
@@ -756,10 +757,10 @@
 		716103D61C23D59500339F01 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				716103D51C23D59500339F01 /* en */,
 				716103D91C23D61000339F01 /* zh-Hans */,
 				716103DD1C23F61400339F01 /* Base */,
 				716103E01C23F64700339F01 /* zh-Hant */,
+				711207B51C24006500FB99EF /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -770,6 +771,7 @@
 				71C58FEC1BBC25BC00F94568 /* Base */,
 				716103D31C23D52D00339F01 /* zh-Hans */,
 				716103DF1C23F64700339F01 /* zh-Hant */,
+				711207B61C24006B00FB99EF /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
