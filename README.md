@@ -2,7 +2,7 @@
 
 An iOS expense tracker app written in Swift
 
-<img src="/BuckTrackerV1/AppIcon.png" width="150">
+<img src="/BuckTracker/AppIcon.png" width="150">
 
 Current version on App Store: v1.1.0
 
