@@ -17,7 +17,7 @@ Current version on App Store: v1.1.0
 - [X] Fix the bug that the date shift bug
 - [X] Chinese localization
 - [X] Allow users to select different weeks to view in bar chart
-- [ ] Submit update to App Store
+- [X] Submit update to App Store
 
 ###v1.1.0
 
