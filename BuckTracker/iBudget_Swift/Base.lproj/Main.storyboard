@@ -35,34 +35,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBT-yQ-wlP" customClass="JTCalendarMenuView">
-                                <rect key="frame" x="20" y="20" width="560" height="50"/>
+                                <rect key="frame" x="20" y="-10" width="560" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GBU-zU-udP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfN-1f-wDH" customClass="JTCalendarWeekDayView">
-                                <rect key="frame" x="20" y="70" width="560" height="30"/>
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wuy-eQ-rUd"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scn-IX-ENy" customClass="JTVerticalCalendarView">
-                                <rect key="frame" x="20" y="120" width="560" height="420"/>
+                                <rect key="frame" x="20" y="90" width="560" height="420"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Scn-IX-ENy" secondAttribute="height" multiplier="2:1.5" id="WnD-5e-bKJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPG-EA-pe2">
-                                <rect key="frame" x="20" y="540" width="560" height="52"/>
+                                <rect key="frame" x="20" y="510" width="560" height="82"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6N-fK-n4n">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faa-cm-6an" customClass="GBFlatButton" customModule="iBudgeter" customModuleProvider="target">
-                                                <rect key="frame" x="80" y="6" width="120" height="40"/>
+                                                <rect key="frame" x="80" y="21" width="120" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="aX5-0e-620"/>
                                                     <constraint firstAttribute="width" constant="120" id="eG6-l6-FoW"/>
@@ -81,10 +81,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isD-3Q-9on">
-                                        <rect key="frame" x="280" y="0.0" width="280" height="52"/>
+                                        <rect key="frame" x="280" y="0.0" width="280" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-3i-LKR" customClass="GBFlatButton" customModule="iBudgeter" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="6" width="66" height="40"/>
+                                                <rect key="frame" x="107" y="21" width="66" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MeH-6Q-7Wo"/>
                                                 </constraints>
@@ -117,6 +117,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Scn-IX-ENy" firstAttribute="top" secondItem="dfN-1f-wDH" secondAttribute="bottom" constant="20" id="0Y5-yu-dnW"/>
+                            <constraint firstItem="Scn-IX-ENy" firstAttribute="centerY" secondItem="srx-5V-U9i" secondAttribute="centerY" id="5Hl-eX-HY8"/>
                             <constraint firstItem="yPG-EA-pe2" firstAttribute="leading" secondItem="srx-5V-U9i" secondAttribute="leadingMargin" id="5sV-83-OtQ"/>
                             <constraint firstItem="dfN-1f-wDH" firstAttribute="top" secondItem="WBT-yQ-wlP" secondAttribute="bottom" id="9jR-Nu-U5O"/>
                             <constraint firstItem="Scn-IX-ENy" firstAttribute="leading" secondItem="srx-5V-U9i" secondAttribute="leadingMargin" id="AHg-Nh-Bar"/>
@@ -131,6 +133,12 @@
                             <constraint firstItem="WBT-yQ-wlP" firstAttribute="top" secondItem="bnL-5b-ZFb" secondAttribute="bottom" id="wNL-g3-J92"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WBT-yQ-wlP" secondAttribute="trailing" id="x9Q-ac-zMG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wNL-g3-J92"/>
+                                <exclude reference="kiG-IM-gXs"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>

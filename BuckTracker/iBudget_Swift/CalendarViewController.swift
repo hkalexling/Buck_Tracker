@@ -55,6 +55,15 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 			self.contentViewRightCons.constant = CGSize.screenSize().width/6
 		}
 		
+		if CGSize.screenSize().width <= 320 { //iPhone 4s
+			
+			self.weekDayViewLeftCons.constant = CGSize.screenSize().width/12
+			self.weekDayViewRightCons.constant = CGSize.screenSize().width/12
+			
+			self.contentViewLeftCons.constant = CGSize.screenSize().width/12
+			self.contentViewRightCons.constant = CGSize.screenSize().width/12
+		}
+		
 		self.thisMonthButton.tintColor = UIColor.themeColor()
 		self.jumpToButton.tintColor = UIColor.themeColor()
 		
@@ -133,6 +142,10 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	func calendar(calendar: JTCalendarManager!, prepareMenuItemView menuItemView: UIView!, date: NSDate!) {
 		let realItemView = menuItemView as! UILabel
 		
+		if CGSize.screenSize().width > 320 { //Not iPhone 4s
+			realItemView.font = UIFont.systemFontOfSize(20)
+		}
+		
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = "MMMM yyyy"
 		dateFormatter.timeZone = NSTimeZone.localTimeZone()
@@ -204,7 +217,8 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		popoverMenuViewController?.delegate = self
 		popoverMenuViewController?.sourceView = self.jumpToButton
 		popoverMenuViewController?.sourceRect = self.jumpToButton.frame
-		presentViewController(
+		
+		self.presentViewController(
 			pickerVC,
 			animated: true,
 			completion: nil)
