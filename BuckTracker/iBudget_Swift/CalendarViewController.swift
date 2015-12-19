@@ -110,7 +110,7 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 				realDayView.dotView.hidden = false
 				var dotColor : UIColor = UIColor()
 				Yuno().backgroundThread({
-						dotColor = self.decideDotColor(realDayView.date.toLocalTime())
+						dotColor = self.decideDotColor(realDayView.date)
 					}, completion: {
 						realDayView.dotView.backgroundColor = dotColor
 				})
@@ -124,7 +124,7 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		if realDayView.date.extractNonLocalDate().month != self.contentView.date.extractNonLocalDate().month {
 			return
 		}
-		self.selectedDate = realDayView.date.toLocalTime()
+		self.selectedDate = realDayView.date
 		let dayVC : DayTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("dayTableVC") as! DayTableViewController
 		dayVC.selectedDate = self.selectedDate
 		self.parentNacController!.pushViewController(dayVC, animated: true)
