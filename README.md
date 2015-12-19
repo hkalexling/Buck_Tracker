@@ -12,17 +12,12 @@ Current version on App Store: v1.1.0
 
 ## ToDo
 
-###v1.3.0
-
-- [X] Fix the bug that the date shift bug
-
 ###v1.2.0
 
-- [ ] Make the calendar view smoother and more responsive
+- [X] Fix the bug that the date shift bug
 - [X] Chinese localization
-- [ ] Apple watch app
-- [ ] Export and import data
 - [X] Allow users to select different weeks to view in bar chart
+- [ ] Submit update to App Store
 
 ###v1.1.0
 
