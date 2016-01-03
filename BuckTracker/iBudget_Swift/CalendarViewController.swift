@@ -96,6 +96,9 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 	func calendar(calendar: JTCalendarManager!, prepareDayView dayView: UIView!) {
 		let realDayView = dayView as! JTCalendarDayView
 		
+		if realDayView.isFromAnotherMonth {
+			realDayView.hidden = true
+		}
 		realDayView.textLabel.font = UIFont(name: realDayView.textLabel.font.fontName, size: 20)
 		//today
 		if self.sameDay(realDayView.date, nonLocalDayB: NSDate()) {
@@ -107,10 +110,9 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 		}
 		else{
 			realDayView.circleView.hidden = true
-			
 			//days in other months
 			if realDayView.date.extractNonLocalDate().month != self.contentView.date.extractNonLocalDate().month {
-				realDayView.textLabel.textColor = UIColor.whiteColor()
+				realDayView.textLabel.textColor = UIColor.lightGrayColor()
 				realDayView.dotView.hidden = true
 			}
 			//other days in the same month
@@ -125,6 +127,7 @@ class CalendarViewController: UIViewController, JTCalendarDelegate, UIPopoverPre
 				})
 			}
 		}
+		
 	}
 	
 	func calendar(calendar: JTCalendarManager!, didTouchDayView dayView: UIView!) {

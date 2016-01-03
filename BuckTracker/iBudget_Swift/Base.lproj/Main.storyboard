@@ -143,7 +143,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
-                        <outlet property="contentView" destination="Scn-IX-ENy" id="8Ic-Id-yvG"/>
+                        <outlet property="contentView" destination="Scn-IX-ENy" id="eWb-lC-Z0S"/>
                         <outlet property="contentViewLeftCons" destination="AHg-Nh-Bar" id="gTR-50-CDX"/>
                         <outlet property="contentViewRightCons" destination="m5x-74-fRf" id="mfm-QO-jOM"/>
                         <outlet property="jumpToButton" destination="fpx-3i-LKR" id="sFU-lh-Yeg"/>
